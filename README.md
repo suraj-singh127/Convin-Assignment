@@ -108,7 +108,7 @@ _Below is an example of how you can instruct your audience on installing and set
    ```
 3. And then finally
    ```sh
-   npm run
+   npm start
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
