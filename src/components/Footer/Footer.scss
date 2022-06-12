@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+
+$primary-color: #195CE3;
+$textColor:#fafdff;
+$font: 'Poppins','sans-serif';
+$defaultFontSize: 18px;
+
+
+.footer{
+    height: 100px;
+    padding: 3rem 3rem 4rem 4rem;
+    background-color: $primary-color;
+    background: linear-gradient(#101010e7,$primary-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid rgba(0, 0, 0, 0.474);
+    @media screen and (max-width:585px){
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .logo{
+        width: 150px;
+    }
+    .socials{
+        .text{
+            color: $textColor;
+            font-size: $defaultFontSize;
+        }
+        .logos{
+            img{
+                margin: 1rem;
+                transition: all 0.1s;
+            }
+            img:hover{
+                transform: translateY(-2px)
+            }
+        }
+    }
+}

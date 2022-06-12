@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+
+$primary-color: #195CE3;
+$textColor:#fafdff;
+$font: 'Poppins','sans-serif';
+$defaultFontSize: 18px;
+
+
+.userInfoPanel{
+    color: $textColor;
+    padding: 1rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    @media screen and (max-width:1300px){
+        flex-direction: column;
+        height: auto;
+    }
+    @media screen and (max-width:585px){
+        padding: 0;
+    }
+
+    .usersList{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        font-family: $font;
+        font-size: 1.4rem;
+        margin: 1rem 0;
+        box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.145);
+        background-color: #171717;
+        @media screen and (max-width:1300px){
+            width: 100%;
+        }
+
+        .listOfUsers{
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            justify-content: center;
+            align-items: center;
+        }
+        .userButton{
+            width: 70%;
+            text-align: center;
+            place-self: center;
+            padding: 0.6rem 1rem;
+            margin:  1rem;
+            cursor: pointer;
+            border-radius: 5rem;
+            background-color: #1a62f2;
+            // background : linear-gradient(72deg, #1a62f2, #1a62f2 22%, #f239d5 78%, #f538d5);
+            font-family: $font;
+            font-size: 1rem;
+            color: $textColor;
+            border-color: transparent;
+            border-radius: 30px;
+            margin-right: 20px;
+        }
+        .userButton:hover{
+            transform: scale(1.05);
+        }
+    }
+    .userCard{
+        width: 20%;
+        height: auto;
+        place-self: center;
+        text-align: center;
+        margin-left: -50px;
+        padding: 2rem 4rem 2rem 4rem;
+        box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.404);
+        background-color: #171717;
+        @media screen and (max-width:1300px){
+            width: 80%;
+            margin-left: 0;
+            margin-top: 0;
+        }
+        @media screen and (max-width:585px){
+            width: 70%;
+            margin: 1rem;
+        }
+
+        .userInformation{
+            .heading{
+                font-size: 1.2rem;
+                margin-top: 0;
+                margin-bottom: 2rem;
+            }
+            .userAvatar{
+                img{
+                    border-radius: 50%;
+                    width: 180px;
+                    margin: 2rem;
+                }
+            }
+            .userName{
+                font-size: 2.3rem;
+                cursor: pointer;
+                display: inline;
+                padding: 0 0.3 1rem 0.3rem;
+            }
+            .userName:hover{
+                cursor: pointer;
+                border-bottom: 1px solid white; 
+            }
+        }
+    }
+}
