@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/suraj-singh127/Convin-Assignment">
-    <h1>Convin Assignment</h1>
+    <h1>Convin.ai Assignment</h1>
   </a>
 
   <h3 align="center">Made using React and Reques API</h3>
